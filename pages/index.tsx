@@ -34,10 +34,14 @@ export default function Home() {
         Movie Suggestions based on ratings
         <div className="m-6 p-6 text-center">
           {result && (
-            <ThumbUpIcon className="w-10 h-10 fill-green-600"></ThumbUpIcon>
+            <ThumbUpIcon
+              sx={{ color: "#16a34a", height: "40px", width: "40px" }}
+            ></ThumbUpIcon>
           )}
           {!result && (
-            <ThumbDownIcon className="w-10 h-10 fill-red-600 animate-bounce"></ThumbDownIcon>
+            <ThumbDownIcon
+              sx={{ color: "#dc2626", height: "40px", width: "40px" }}
+            ></ThumbDownIcon>
           )}
           <TextField
             value={input}
